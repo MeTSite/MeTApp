@@ -1,0 +1,21 @@
+{
+  "name": "metsite",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "^2.3.0",
+    "@zeit/next-css": "^1.0.1",
+    "autoprefixer": "^9.8.5",
+    "cssnano": "^4.1.10",
+    "next": "9.4.4",
+    "postcss-easy-import": "^3.0.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "tailwindcss": "^1.5.1"
+  }
+}

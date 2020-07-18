@@ -1,4 +1,17 @@
-import Head from 'next/head'
+import React from 'react';
+
+class Home extends React.Component {
+  render() {
+    return (
+      <h1 className="bg-blue-100 text-center p-5 font-mono text-xl text-green-800">
+        Bienvenida a MeT[CBA]</h1>
+    )
+  }
+}
+
+export default Home;
+
+/*import Head from 'next/head'
 
 export default function Home() {
   return (
@@ -206,4 +219,4 @@ export default function Home() {
       `}</style>
     </div>
   )
-}
+}*/

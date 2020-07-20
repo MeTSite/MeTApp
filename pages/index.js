@@ -3,7 +3,7 @@ import React from 'react';
 class Home extends React.Component {
   render() {
     return (
-      <h1 className="bg-blue-100 text-center p-5 font-mono text-xl text-green-800">
+      <h1 className="title">
         Bienvenida a MeT[CBA]</h1>
     )
   }

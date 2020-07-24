@@ -6,8 +6,8 @@ const Toolbar = (props) => {
   return (
     <header className="toolbar">
       <nav className="toolbar__navigation">
-        <div>
-          <ToggleButton />
+        <div className="toolbar__navigation-button">
+          <ToggleButton click={props.toggleClick}/>
         </div>
         <div className="toolbar__logo"><a href="/">MeT Logo</a></div>
         <div className="spacer" />

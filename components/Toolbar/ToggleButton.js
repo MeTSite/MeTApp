@@ -2,9 +2,9 @@ import React from 'react';
 
 import '../styles.css';
 
-const Toggle = () => {
+const Toggle = (props) => {
   return (
-    <button className="toggle">
+    <button className="toggle" onClick={props.click}>
       <span className="toggle__line"></span>
       <span className="toggle__line"/>
       <span className="toggle__line"/>

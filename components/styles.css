@@ -1,6 +1,10 @@
 @tailwind base;
 @tailwind components;
 
+.app {
+  height: 100%;
+}
+
 .title {
   @apply bg-blue-100;
   @apply text-center;
@@ -80,9 +84,76 @@ outline: none;
 
 .toggle__line {
   width: 100%;
-  height: 1px;
+  height: 2px;
   background: whitesmoke;
-  z-index: 999;
+}
+
+.sidebar {
+  height: 100%;
+  background: whitesmoke;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 70%;
+  max-width: 400px;
+  z-index: 200;
+  transform: translateX(-110%);
+  transition: transform 0.3s ease-out;
+}
+
+.sidebar.open {
+  transform: translateX(0);
+
+}
+
+.sidebar ul {
+  height: 100%;
+  list-style: nome;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sidebar li {
+  margin: 1.5rem 2.5rem;
+}
+
+.sidebar a {
+  color: darkblue;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.sidebar a:hover,
+.sidebar a:active {
+  color: blue;
+}
+
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 100;
+}
+
+@media (max-width: 768px) {
+  .toolbar__navigation-items {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .sidebar {
+    display: none;
+  }
+
+  .toolbar__navigation-button {
+    display: none;
+  }
 }
 
 @tailwind utilities;

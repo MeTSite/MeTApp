@@ -29,7 +29,7 @@ class Home extends React.Component {
     };
 
     return (
-      <div className="app">
+      <div className="app w-auto h-screen">
         <NavBar toggleClick={this.toggleClickHandler} />
         <SideBar show={this.state.sideBarOpen} />
         {backdrop}

@@ -1,5 +1,6 @@
 import React from 'react';
 import ToggleButton from './ToggleButton';
+import Link from 'next/link';
 import '../styles.css';
 
 const Toolbar = (props) => {
@@ -9,21 +10,21 @@ const Toolbar = (props) => {
         <div className="toolbar__navigation-button">
           <ToggleButton click={props.toggleClick}/>
         </div>
-        <div className="toolbar__logo"><a href="/">MeT Logo</a></div>
+        <div className="toolbar__logo"><Link href="/"><a>MeT Logo</a></Link></div>
         <div className="spacer" />
         <div className="toolbar__navigation-items">
           <ul>
             <li>
-              <a hfef="/" exact>MeT Camp</a>
+              <Link href="/metcamps/MetCamps"><a>MeT Camps</a></Link>
             </li>
             <li>
-              <a hfer="#">Blog</a>
+              <Link href="#"><a>Blog</a></Link>
             </li>
             <li>
-              <a href="#">Noticias</a>
+              <Link href="#"><a>Noticias</a></Link>
             </li>
             <li>
-              <a href="#">Nosotras</a>
+              <Link href="#"><a>Nosotras</a></Link>
             </li>
           </ul>
         </div>

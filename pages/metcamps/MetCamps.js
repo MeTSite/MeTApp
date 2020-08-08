@@ -1,14 +1,10 @@
 import React from 'react';
-import NavBar from '../../components/Toolbar/NavBar';
-import SideBar from '../../components/Toolbar/SideBar';
-import Backdrop from '../../components/Toolbar/Backdrop';
 import MetCamp from '../../components/Metcamp/MetCamp.js';
 import '../styles/metcamps.css'
 
 const MetCamps = () => {
   return (
     <div className="bg-grad-muted-gray w-full h-screen flex flex-col items-center justify-center">
-      <NavBar />
       <h1 className="font-mono text-center text-3xl mt-1 p-3 pt-1 ">Metcamps!</h1>
       <div className="w-3/4">
         <MetCamp className="" 
